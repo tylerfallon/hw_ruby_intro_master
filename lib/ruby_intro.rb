@@ -25,12 +25,13 @@ def hello(name)
   return "Hello, #{name}"
 end
 
-def starts_with_consonant? s
+def starts_with_consonant? s 
   return !!(s =~ /^[bcdfghjklmnpqrstvwxyz]/i)
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+   return false if s =~ /[^01]/ || s.length == 0
+   s.to_i(2) % 4 == 0
 end
 
 # Part 3
