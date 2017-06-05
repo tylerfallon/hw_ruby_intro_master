@@ -16,17 +16,17 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  (arr.empty? && n.zero?) || arr.permutation(2).any? { |a,b| a + b == n }
+  (arr.nil? && n.zero?) || arr.permutation(2).any? { |a,b| a + b == n }
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, #{name}"
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  return !!(s =~ /^[bcdfghjklmnpqrstvwxyz]/i)
 end
 
 def binary_multiple_of_4? s
